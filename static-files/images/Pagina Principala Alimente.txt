@@ -1,0 +1,264 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>Pagina Alimente</title>
+
+<style>
+h1 {
+font-family:"Harrington";
+font-size: 40px;
+text-align: center;
+}
+
+p.lista{
+text-align: left;
+}
+body {
+background-color: rgb(239,190,175);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  right: 15%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> <a href="Pagina Principala.HTML" > <b> Food & Stuff </b> </a> </h1>
+
+<p class="lista"> <a href="Lista cumparaturi.HTML" > <div class="container"> <img src="lista.png" width="50" height="50" title=" Lista mea de cumparaturi "> </div> </a> </p>
+
+<p> <b> <i> LEGUME </i> </b> </p>
+
+<table> 
+
+<tr>
+	
+	<td> <div class="container"> <img src="cartofi.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="ardei gras.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="cartofi dulci.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></div></td>
+	<td> <div class="container"> <img src="castraveti.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></div> </td>
+	<td> <div class="container"> <img src="ceapa galbena.png" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="ceapa rosie.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="dovlecel.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="morcov.png" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="pastarnac.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></div></td>
+
+</tr>
+
+<tr>
+
+	<td> <div class="container"> <img src="rosii.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="rosii cherry.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="sfecla.png" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="telina.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="vinete.jpg" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="zucchini.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="brocoli.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="conopida.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="anghinare.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+</tr>
+
+<tr>
+	<td> <div class="container"> <img src="varza alba.jpg" width="160" height="150" title=" Pepene Galben - 10 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="varza rosie.jpg" width="160" height="150" title=" Pepene Rosu - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="ciuperci champinion.jpg" width="160" height="150" title=" Nuca de Cocos - 15 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="usturoi.jpg" width="160" height="150" title=" Fructul Dragonului - 20 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="asparagus.jpg" width="160" height="150" title=" Rodie - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="varza de bruxelles.jpg" width="160" height="150" title=" Avocado - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="mazare.jpg" width="160" height="150" title=" Gutui - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="fasole pastai.jpg" width="160" height="150" title=" Smochine - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="ardei kapia.jpg" width="160" height="150" title=" Papaya - 25 Ron/Buc" ><button class="btn">+</button></div></td>
+</tr>
+
+</table>
+<br /><br />
+<p> <b> <i> FRUCTE </i> </b> </p>
+
+<table> 
+
+<tr>
+	
+	<td> <div class="container"> <img src="banana.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="ananas.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="portocala.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></div></td>
+	<td> <div class="container"> <img src="kiwi.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></div> </td>
+	<td> <div class="container"> <img src="mar.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="para.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="piersica.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="struguri.png" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="mango.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></div></td>
+
+</tr>
+
+<tr>
+
+	<td> <div class="container"> <img src="afine.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="capsuni.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="zmeura.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="mure.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="cirese.png" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="lime.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="lamai.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="prune.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="grapefruit.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+</tr>
+
+<tr>
+	<td> <div class="container"> <img src="pepene galben.png" width="160" height="150" title=" Pepene Galben - 10 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="pepene rosu.jpeg" width="160" height="150" title=" Pepene Rosu - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="nuca de cocos.jpeg" width="160" height="150" title=" Nuca de Cocos - 15 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="fructul dragonului.jpg" width="160" height="150" title=" Fructul Dragonului - 20 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="rodie.jpg" width="160" height="150" title=" Rodie - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="avocado.jpg" width="160" height="150" title=" Avocado - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="gutui.jpg" width="160" height="150" title=" Gutui - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="smochine.jpg" width="160" height="150" title=" Smochine - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="papaya.jpg" width="160" height="150" title=" Papaya - 25 Ron/Buc" ><button class="btn">+</button></div></td>
+</tr>
+
+</table>
+
+<br /><br />
+<p> <b> <i> VERDETURI SI CONDIMENTE </i> </b> </p>
+
+<table> 
+
+<tr>
+	
+	<td> <div class="container"> <img src="salata verde.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="spanac.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="rucola.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></div></td>
+	<td> <div class="container"> <img src="andive.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></div> </td>
+	<td> <div class="container"> <img src="patrunjel.png" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="marar.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="leustean.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="rozmarin.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="ceapa verde.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></div></td>
+
+</tr>
+
+<tr>
+
+	<td> <div class="container"> <img src="piper negru.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="piper alb.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="busuioc.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="coriandru.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="oregano.jpg" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="foi de dafin.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="boia de ardei.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="curry.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="chili.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+</tr>
+
+</table>
+
+<br /><br />
+<p> <b> <i> PRODUSE DE ORIGINE ANIMALA </i> </b> </p>
+
+<table> 
+
+<tr>
+	
+	<td> <div class="container"> <img src="lapte.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="smantana.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="cascaval.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></div></td>
+	<td> <div class="container"> <img src="unt.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></div> </td>
+	<td> <div class="container"> <img src="telemea.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="branza feta.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="branza dulce.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="iaurt.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="iaurt fructe.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></div></td>
+
+</tr>
+
+<tr>
+
+	<td> <div class="container"> <img src="gorgonzola.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="brie.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="mozzarella.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="gouda.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="branza topita.jpg" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="crema de branza.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="branza de burduf.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="oua.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="oua de prepelita.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+</tr>
+
+<tr>
+	<td> <div class="container"> <img src="carne de vita.jpg" width="160" height="150" title=" Pepene Galben - 10 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="piept de pui.jpg" width="160" height="150" title=" Pepene Rosu - 8 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="pulpe de pui.jpg" width="160" height="150" title=" Nuca de Cocos - 15 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="carne de porc.jpg" width="160" height="150" title=" Fructul Dragonului - 20 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="bacon.png" width="160" height="150" title=" Rodie - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="mici.jpg" width="160" height="150" title=" Avocado - 5 Ron/Buc" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="carne de curcan.png" width="160" height="150" title=" Gutui - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="peste.jpg" width="160" height="150" title=" Smochine - 40 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="fructe de mare.jpg" width="160" height="150" title=" Papaya - 25 Ron/Buc" ><button class="btn">+</button></div></td>
+</tr>
+
+</table>
+
+<br /><br />
+<p> <b> <i> PRODUSE AMBALATE </i> </b> </p>
+
+<table> 
+
+<tr>
+	
+	<td> <div class="container"> <img src="sare.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="zahar.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="orez.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="faina de grau.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></div></td>
+	<td> <div class="container"> <img src="faina de porumb.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></div> </td>
+	<td> <div class="container"> <img src="paste.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="spaghetti.jpeg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="naut.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="gris.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></div></td>
+
+</tr>
+
+<tr>
+
+	<td> <div class="container"> <img src="ulei.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="ulei de masline.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>	
+	<td> <div class="container"> <img src="otet.png" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="musli.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="masline.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="porumb.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="castraveti in otet.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></div></td>
+	<td> <div class="container"> <img src="bulion.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></div></td>
+	
+</tr>
+
+</table>
+
+<br /><br />
+
+<p> &copy;A&J Team TW 2020 B3 #StaiAcasa </p>
+
+<br /><br />
+
+</body>
+</html>
