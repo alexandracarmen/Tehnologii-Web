@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+
+<style>
+
+table.ingrediente {
+  border-collapse: collapse;
+  width: 60%;
+}
+table.ingrediente, tr.ingrediente, td.ingrediente {
+  border: 1px solid white;
+}
+body{
+background-image:url("1.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+color: white;
+}
+h1,h2{
+color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> <a href="Pagina Principala.HTML" > <b> Food & Stuff </b> </a> </h1>
+
+<h2> <b>  Bors cu perisoare </b> <button class="btn"><img src="inima.png" width="13" height ="13" title="Adauga la favorite" ></button> </h2>
+
+<p> <i> Reteta postata de Julia Bompa. #specificRomanesc </i> </p>
+
+<h3> Timp de pregatire: 30 min </h3>
+
+<h3> Timp de gatire: 90 min </h3>
+
+<h3> <b> Ingrediente necesare: </b> </h3>
+
+<table class="ingrediente">
+
+<tr class="ingrediente">
+  <td > Cartofi </td>
+  <td class="ingrediente"> 3 buc </td>
+  <td> Morcovi </td>
+  <td class="ingrediente"> 2 buc </td>
+  <td> Ceapa galbena </td>
+  <td class="ingrediente"> 3 buc </td>
+  <td> Patrunjel </td>
+  <td class="ingrediente"> 2 leg </td>
+  <td> Leustean </td>
+  <td class="ingrediente"> 1 leg </td>
+  <td> Carne de pui </td>
+  <td class="ingrediente"> 500 gr </td>
+</tr>
+<tr class="ingrediente">
+  <td> Telina </td>
+  <td class="ingrediente"> 1/2 buc </td>
+  <td> Ardei gras </td>
+  <td class="ingrediente"> 1 buc </td>
+  <td> Pastarnac </td>
+  <td class="ingrediente"> 1/2 buc </td>
+  <td> Bors acru </td>
+  <td class="ingrediente"> 1/2 l </td>
+  <td> Orez </td>
+  <td class="ingrediente"> 4 lg </td>
+  <td> Oua </td>
+  <td class="ingrediente"> 1 buc </td>
+</tr>
+<tr class="ingrediente">
+  <td> Sare </td>
+  <td class="ingrediente"> 2 lg </td>
+  <td> Piper </td>
+  <td class="ingrediente"> 1/6 lg </td>
+  <td> Rosii </td>
+  <td class="ingrediente"> 2 buc </td>
+  
+</tr>
+</table>
+
+<h3> Mod de preparare: </h3>
+<p> 1. Toate legumele se curăţă şi se spală. Ceapa, morcovii, păstârnacul şi ţelina se toacă mărunt şi se pun la fiert în 2 litri de apă cu un praf de sare. <br /> &nbsp;&nbsp;&nbsp;  Se acoperă şi se lasă să fiarbă, la foc mic, aproximativ jumătate de oră, până se înmoaie bine toate legumele.
+<br />
+2. Între timp, carnea tocată se amestecă cu ceapa tocată mărunt, dată cu un praf de sare şi zdrobită sau stoarsă. Se adaugă orezul curăţat şi spălat, oul bătut, <br /> &nbsp; &nbsp; pătrunjelul tocat mărunt şi puţin piper. Se amestecă şi se lasă puţin deoparte să-şi ia sarea.
+<br />
+3. Se ia cu linguriţa din carnea tocată şi se formează perişoarele, umezind de fiecare dată mâinile cu apă rece. Se adaugă pe rând în supă şi se lasă să fiarbă. <br /> &nbsp; &nbsp; Se adaugă apoi roşiile şi ardeiul gras tăiat cubuleţe şi se fierbe, până se ridică perişoarele deasupra. <br /> &nbsp; &nbsp; Se spumează de câte ori este nevoie, apoi se pune şi borşul fiert separat, altfel spumează din nou.
+<br />
+4. Se potriveşte la gust cu sare şi se aromează cu leuştean verde tocat mărunt. Se stinge focul şi se ţine oala acoperită 10-15 minute, apoi se poate servi.
+</p>
+
+<table>
+<tr>
+	<td> <image src="bors2.jpg" width="200" height ="120"> </td>
+	<td> <image src="bors3.jpg" width="200" height ="120"> </td>
+	<td> <image src="bors4.jpg" width="200" height ="120"> </td>
+	<td> <image src="bors.jpg" width="200" height ="120"> </td>
+	<td> <image src="bors1.jpg" width="200" height ="120"> </td>
+</tr>
+</table>
+
+<h3><b> POFTA BUNA! </b> </h3>
+
+<p> &copy;A&J Team TW 2020 B3 #StaiAcasa </p>
+
+</body>
+</html>

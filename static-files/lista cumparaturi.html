@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PaginaLogin</title>
+    <style>
+        body {
+            background-attachment: fixed;
+            background-image: url(oglinda.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0px;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        table{
+            border-spacing: 0;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        th,td{
+            border-bottom: 1px solid #dddddd;
+            padding: 24px;
+        }
+
+        th{
+            font-weight: 600;
+            color: #808080;
+            font-family: sans-serif;
+            text-align: left;
+            background-color: #ebebeb ;
+        }
+
+        td{
+            padding-left: 25px;
+        }
+
+        td{
+            padding-left: 25px;
+        }
+
+        input{
+            color: #666666;
+            min-height: 30px;
+            font-size: 16px;
+            border-radius: 3px;
+            border-width: 1px;
+            border-color: #dddddd;
+            box-shadow: none;
+            border-style: solid;
+            padding-left: 10px;
+        }
+
+        input:focus{
+            background-color: #ebebeb;
+            outline: none;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #5f9afa ;
+        }
+
+        a:hover{
+            background-color: #7ac8ff ;
+        }
+
+        h2{
+            padding-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li:nth-child(1){
+            border-top:  solid 1px #dddddd;
+        }
+
+        li{
+            border-bottom:  solid 1px #dddddd;
+            background-color: #21A179;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        li:hover{
+            background-color: #3E8914;
+        }
+
+        .sterge{
+            color:#fff;
+            background-color: #dc3545;
+            padding: 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            border:none;
+            float: right;
+        }
+
+        li .sterge{
+            margin-top: -50px;
+            margin-right: 5px;
+        }
+
+        .sterge:hover{
+            background-color: #c82333;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .sterge:focus{
+            outline: none;
+        }
+
+        .list-item{
+            border-radius: 0;
+            background-color: #9cb5a2;
+            display: block;
+            padding: 20px 10px;
+        }
+
+        .list-item:hover{
+            background-color: #79ab85;
+            display: block;
+            padding: 20px 10px;
+        }
+
+        span.titlu-search{
+            padding-bottom: 5px;
+            display: block;
+            font-weight: 600;
+            color:#6c757d;
+        }
+
+        .input-filtru{
+            width: 100%;
+            padding: 8px;
+        }
+
+        .input-filtru:focus{
+            background-color: white;
+            border-color: #787878;
+            opacity: 0.8;
+            outline: none;
+        }
+
+        .adauga-produs{
+            width: 100%;
+            text-decoration: none;
+            padding: 14px;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            color: #fff;
+            margin-top: 22px;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .adauga-produs:focus{
+            outline: none;
+        }
+
+        .adauga-produs:hover{
+            outline: none;
+            background-color: #218838;
+        }
+
+        .action th{
+            color: #fff;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            background-color: #80b2bd;
+        }
+
+        .btn-actiune{
+            width: 150px;
+            color:#fff;
+            padding: 10px 15px;
+            font-size: 12px;
+            border-radius: 4px;
+            border:none;
+            background-color: #5c6e78;
+            margin-bottom: 5px;
+        }
+
+        .btn-actiune:hover{
+            background-color: #4c5357;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+        }
+
+        .btn-actiune.salvare{
+            border: 2px solid #51ba49 ;
+            background-color: #71d169;
+            padding: 15px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .btn-actiune.salvare:hover{
+            background-color: #51ba49;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+        }
+
+        .btn-actiune:focus{
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body style="">
+<div style="display: table;position: absolute;top: 0;left: 0;height: 100%;width: 100%;">
+    <div style="display: table-cell;vertical-align: middle;">
+        <div style="width: 250px;height: 100%;float: left;background-color: #e8e8e8;-webkit-box-shadow: 4px 3px 5px 0px rgba(186,186,186,0.67);
+-moz-box-shadow: 4px 3px 5px 0px rgba(186,186,186,0.67);
+box-shadow: 4px 3px 5px 0px rgba(186,186,186,0.67);">
+            <h3 style="text-align: center;padding-bottom: 0;color:#6b6b6b;;">Liste de cumparaturi</h3>
+            <div style="margin: 0 auto;text-align: center;padding: 20px;">
+                <a style="margin: 0 auto;padding: 10px 20px;">Adauga lista noua</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="list-item">
+                        <span class="list-name">Favorite</span>
+                    </a>
+                    <button class="sterge">Sterge</button>
+                </li>
+                <li>
+                    <a href="" class="list-item">
+                        <span class="list-name">De retinut</span>
+                    </a>
+                    <button class="sterge">Sterge</button>
+                </li>
+                <li>
+                    <a href="" class="list-item">
+                        <span class="list-name">Perisabile</span>
+                    </a>
+                    <button class="sterge">Sterge</button>
+                </li>
+            </ul>
+        </div>
+        <div style="width: calc(100% - 250px);float: right;height: 100%;">
+            <div style="display: table;position: relative;top: 0;left: 0;height: 100%;width: 100%;">
+                <div style="display: table-cell;vertical-align: middle;">
+                    <div style="border: 1px solid #ccc;background-color:#fff; margin-left: auto;margin-right: auto;width: 80%; margin: 0 auto;">
+                        <div style="height: 150px;width: 100%;background-color: #e8e8e8;-webkit-box-shadow: 0px 3px 5px 0px rgba(186,186,186,0.67);
+-moz-box-shadow: 0px 3px 5px 0px rgba(186,186,186,0.67);
+box-shadow: 0px 3px 5px 0px rgba(186,186,186,0.67);">
+
+                            <div style="display: flex;padding: 20px;">
+                                <div style="width:40%;padding: 20px;">
+                                    <span class="titlu-search">Produs</span>
+                                    <input type="text" class="input-filtru" placeholder="Introdu nume produs">
+                                </div>
+                                <div style="width:40%;padding: 20px;">
+                                    <span class="titlu-search">Cantiate?</span>
+                                    <input type="text" class="input-filtru" placeholder="Introdu numarul de produse">
+                                </div>
+                                <div style="width:20%;padding: 20px;">
+                                    <button class="adauga-produs">Adauga in lista</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div style="padding: 40px;">
+                            <h2>
+                                Nume list
+                            </h2>
+
+                            <table style="width:100%">
+                                <tr class="action">
+                                    <th colspan="4">
+                                        <span>Evenimente</span>
+                                        <div style="float: right; margin-top: 10px;">
+                                            <button class="btn-actiune salvare">Salvati</button>
+                                        </div>
+                                        <div style="margin-top: 10px;">
+                                            <button class="btn-actiune">Sorteaza</button>
+                                            <button class="btn-actiune">Actualizeaza</button>
+                                            <button class="btn-actiune">Muta</button>
+                                            <button class="btn-actiune">Copiati</button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div style="font-size: 18px;"><strong style="color:#a3a2a2;font-size: 14px;">Total cos:</strong> 12 Ron</div>
+                                        <div style="font-size: 18px;"><strong style="color:#a3a2a2;font-size: 14px;">Total lista:</strong> 24 Ron</div>
+                                    </th>
+                                    <th>
+                                        <span>Cantitate</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <span>Pret unitate / total</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Iaurt</td>
+                                    <td>2 packete</td>
+                                    <td>2 Ron / 5 Ron</td>
+                                    <td><button class="sterge">Sterge</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Mere</td>
+                                    <td>2 kg</td>
+                                    <td>3.5 Ron / 7 Ron</td>
+                                    <td><button class="sterge">Sterge</button></td>
+
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
