@@ -1,0 +1,14 @@
+{
+  "tokenSecret": "123456",
+  "mailtrap": {
+    "host": "smtp.mailtrap.io",
+    "port": 2525,
+    "auth": {
+      "user": "2de3f747670abf",
+      "pass": "8df732cf5debef"
+    }
+  },
+  "mail": {
+    "defaultFrom": "food_organizer@gmail.com"
+  }
+}
