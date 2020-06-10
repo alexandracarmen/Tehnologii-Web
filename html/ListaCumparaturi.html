@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+
+<style>
+
+
+body{
+background-image:url("foods.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+color: black;
+margin-left:10px;
+}
+h1{
+color:#20B2AA;
+}
+h2{
+color: black;
+}
+
+.imagine {
+  position: relative;
+  width: 100%;
+}
+#copyright {
+    position: absolute;
+    bottom: 0;
+    color: grey;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="style-navbar.css">
+
+</head>
+<body>
+
+<div class="navbar">
+<a href="PaginaPrincipalaIn.html">Acasa</a>
+	<div class="dropdown">
+    <button class="dropbtn">Setari
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="DateCont.html">Date Personale</a>
+      <a href="PaginaPrincipalaOut.html">Logout</a>
+    </div>
+  </div>
+  <a href="ListaCumparaturi.html">Lista de cumparaturi</a>
+  <a href="Alimente.html">Alimente</a>
+	<div class="dropdown">
+    <button class="dropbtn">Retete
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Retete.html">Toate Retetele</a>
+      <a href="RetetePersonale.html">Retele personale</a>
+      <a href="ReteteFavorite.html">Retete favorite</a>
+      <a href="RetetaNoua.html">Adauga Reteta</a>
+	<div class="dropdowns">
+    <button class="dropbtns">Specific
+      <i class="fa fa-caret-downs"></i>
+    </button>
+    <div class="dropdown-contents">
+      <a href="ReteteSpecific.html">Romanesc</a>
+      <a href="ReteteSpecific.html">Italian</a>
+      <a href="ReteteSpecific.html">Vegetarian</a>
+      <a href="ReteteSpecific.html">Vegan</a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Grupuri
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="grup.html">Familie</a>
+      <a href="grup.html">Prieteni</a>
+      <a href="grup.html">Vegani</a>
+    </div>
+  </div>
+<p style="float:left; color: #20B2AA; font-family: Comic Sans, Comic Sans MS, cursive; font-size: 100%"><b><i> Food & Stuff</i></b></p>
+</div>
+
+<h2> <b> Lista de cumparaturi </b> </h2>
+
+<label for="Aliment"><b>Adauga aliment:</b> </label>
+<select> <option value="ceapa">ceapa</option>
+	<option value="marar">marar</option>
+</select>
+
+</br></br>
+
+<table>
+<tr>
+<td> <img src="cartofi.jpg" width="40" height="37"> </td>
+<td> <b>Cartofi</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> Kg </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="zahar.jpg" width="40" height="37"> </td>
+<td> <b>Zahar</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> Kg </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="patrunjel.png" width="40" height="37"> </td>
+<td> <b>Patrunjel</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> leg. </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="lapte.jpg" width="40" height="37"> </td>
+<td> <b>Lapte</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> l </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="masline.jpg" width="40" height="37"> </td>
+<td> <b>Masline</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> gr </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="cascaval.jpg" width="40" height="37"> </td>
+<td> <b>Cascaval</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> gr </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="struguri.png" width="40" height="37"> </td>
+<td> <b>Struguri</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> Kg </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+<tr>
+<td> <img src="avocado.jpg" width="40" height="37"> </td>
+<td> <b>Avocado</b> </td>
+<td> <input type="number" id="cantitate" name="cantitate"></td>
+<td> buc </td>
+<td> <button title="Sterge din lista">X</button></div> </td>
+</tr>
+</table>
+
+</br></br>
+<button>Printeaza lista</button>
+
+<div id="copyright">
+   &copy;A&J Team TW 2020 B3 #StaiAcasa
+</div>
+
+</body>
+</html>

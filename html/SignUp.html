@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignUp</title>
+  <style>
+	body{
+	background-image:url("food.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	}
+   
+	label{ color: black;}
+
+	h2{color:black;}
+
+  </style>
+</head>
+
+ <body style="background-color: rgba(0,0,0,0.5)">
+
+  <div style="display: table;position: absolute;top: 0;left: 0;height: 100%;width: 100%;">
+    <div style="display: table-cell;vertical-align: middle;">
+     
+      <div id="id01" class="modal" style="border: 1px solid #ccc;background-color:#fff; margin-left: auto;margin-right: auto;width: 400px; padding: 10px 25px; border-radius: 10px; float:right; margin-right: 100px;">
+
+        <div class="container" >
+          
+          <div style="text-align: center; padding-top: 20px;">
+            <h2>Sign Up</h2>  
+          </div>
+
+          <form class="signup">
+
+	    <div style="padding:  0 10px;;">
+              <label for="name">
+                <b>Nume</b>
+              </label>
+              <br>
+              <input type="text" style="width: 100%;height: 40px; background-color:#f7f7f7;margin-top:5px;padding-left: 5px;" placeholder="Introduceti Nume" name="name" required>
+            </div>
+
+</br>
+	    <div style="padding:  0 10px;;">
+              <label for="surname">
+                <b>Prenume</b>
+              </label>
+              <br>
+              <input type="text" style="width: 100%;height: 40px; background-color:#f7f7f7;margin-top:5px;padding-left: 5px;" placeholder="Introduceti Prenume" name="surname" required>
+            </div>
+
+</br>
+	    <div style="padding:  0 10px;">
+              <label for="email">
+                <b>Email</b>
+              </label>
+              <br>
+              <input type="text" style="width: 100%;height: 40px; background-color:#f7f7f7;margin-top:5px;padding-left: 5px;" placeholder="Introduceti Email" name="email" required>
+            </div>
+
+</br>
+            <div style="padding:  0 10px;">
+              <label for="uname">
+                <b>Nume utilizator</b>
+              </label>
+              <br>
+              <input type="text" style="width: 100%;height: 40px; background-color:#f7f7f7;margin-top:5px;padding-left: 5px;" placeholder="Introduceti Nume Utilizator" name="uname" required>
+            </div>
+
+</br>
+            <div  style="padding:  0 10px;">
+              <label for="pswl"  style="padding-bottom: 10px;">
+                <b>Parola</b>
+              </label>
+              <br>
+              <input id="psw" type="password" style="width: 100%;height: 40px;margin-top:5px;background-color:#f7f7f7;padding-left: 5px;" placeholder="Introduceti Parola" name="psw" required>
+            </div>
+</br>
+	    <div  style="padding:  0 10px;">
+              <label for="cpsw"  style="padding-bottom: 10px;">
+                <b>Confirmare Parola</b>
+              </label>
+              <br>
+              <input id="rpsw" type="password" style="width: 100%;height: 40px;margin-top:5px;background-color:#f7f7f7;padding-left: 5px;" placeholder="Reintroduceti Parola" name="rpsw" required>
+            </div>
+
+            <div style="padding: 0 10px;">
+              <p id="errorText"></p>
+            </div>
+
+            <div  style="padding: 25px 10px 0px 10px;">
+              <button style="width: 100%; padding: 12px;border: none; border-radius: 8px; font-size: 16px; font-weight: 500; background: #31a31a; color:#fff;" type="submit">Sign Up</button>
+            </div>
+
+          </form>
+
+          <div  style="text-align: center; padding: 14px;">
+            <a href="PaginaPrincipalaOut.html" style="text-decoration: none; color:#a3a3a3;font-weight: 200; font-size: 16px;">Inapoi acasa</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const loginPostRequest = (data) => {
+
+      return new Promise((resolve, reject) => {
+
+        fetch("http://localhost:8081/api/auth/signup", {
+          method: "POST",
+          body: JSON.stringify(data)
+        }).then(res => {
+          console.log(res);
+            window.location.replace("http://localhost:8081/login");
+        })
+      });
+    };
+
+    const submitPage_form = document.querySelector('.signup');
+
+    submitPage_form.addEventListener('submit', e => {
+      e.preventDefault();
+
+
+      let first_name = submitPage_form.name.value;
+      let last_name = submitPage_form.surname.value;
+      let username = submitPage_form.uname.value;
+      let email = submitPage_form.email.value;
+      let password = submitPage_form.psw.value;
+      let rpassword = submitPage_form.rpsw.value;
+
+      if(password != rpassword) {
+        document.getElementById("psw").style.borderColor = "red";
+        document.getElementById("rpsw").style.borderColor = "red";
+        var error = document.getElementById("errorText") 
+        error.textContent = "Parolele nu se potrivesc!" 
+        error.style.color = "red" 
+        return;
+      }
+
+      console.log('email', email);
+      console.log('password', password);
+
+      loginPostRequest({first_name, last_name, email, username, password})
+        .then(() => {
+          console.log('da');
+
+        })
+        .catch(message => {
+          console.log(message);
+         
+
+          
+        });
+    });
+
+
+  </script>
+
+</body>
+</html>
