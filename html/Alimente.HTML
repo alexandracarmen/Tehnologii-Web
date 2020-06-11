@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Pagina Alimente</title>
+
+<style>
+h1 {
+color: #20B2AA;
+}
+
+p.lista{
+text-align: left;
+}
+
+body{
+background-color: rgb(231,245,250);
+margin-left:10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: RGB(0, 128, 128);
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+img{
+position:relative}
+
+
+.btn{
+background-color: RGB(0, 128, 128); 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+border-radius: 15px;
+}
+
+.btn:hover{
+background-color: #4CAF50;
+color: white;}
+
+
+#copyright {
+    position: relative;
+    bottom: 0;
+    color: grey;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+  top:0;
+  
+  font-family: Arial;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+}
+.dropdowns{
+float: left;
+overflow:hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: Black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdowns .dropbtns {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: Black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover, dropdowns:hover, .dropbtns,.dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content , .dropdown-contents{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a, .dropdown-contents a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover , .dropdown-contents a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content , .dropdowns:hover .dropdown-contents {
+  display: block;
+}
+/*buttons style*/
+
+button, .submit{
+  background-color: RGB(0, 128, 128); 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  border-radius: 15px;
+  }
+  
+  button:hover, .submit:hover{
+  background-color: #4CAF50;
+  color: white;}
+  
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+<a href="PaginaPrincipalaIn.html">Acasa</a>
+	<div class="dropdown">
+    <button class="dropbtn">Setari
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="DateCont.html">Date Personale</a>
+      <a href="PaginaPrincipalaOut.html">Logout</a>
+    </div>
+  </div>
+  <a href="ListaCumparaturi.html">Lista de cumparaturi</a>
+  <a href="Alimente.html">Alimente</a>
+	<div class="dropdown">
+    <button class="dropbtn">Retete
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Retete.html">Toate Retetele</a>
+      <a href="RetetePersonale.html">Retele personale</a>
+      <a href="ReteteFavorite.html">Retete favorite</a>
+      <a href="RetetaNoua.html">Adauga Reteta</a>
+	<div class="dropdowns">
+    <button class="dropbtns">Specific
+      <i class="fa fa-caret-downs"></i>
+    </button>
+    <div class="dropdown-contents">
+      <a href="ReteteSpecific.html">Romanesc</a>
+      <a href="ReteteSpecific.html">Italian</a>
+      <a href="ReteteSpecific.html">Vegetarian</a>
+      <a href="ReteteSpecific.html">Vegan</a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Grupuri
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="grup.html">Familie</a>
+      <a href="grup.html">Prieteni</a>
+      <a href="grup.html">Vegani</a>
+    </div>
+  </div>
+<p style="float:left; color: #20B2AA; font-family: Comic Sans, Comic Sans MS, cursive; font-size: 100%"><b><i> Food & Stuff</i></b></p>
+
+</div>
+
+<div >
+<p> <b> <i> LEGUME </i> </b> </p>
+
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Cauta aliment.." name="search">
+    </form>
+ </div>
+
+</br></br>
+<table>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="cartofi.jpg" width="160" height="150" title=" Cartofi - 5 Ron/Kg"> <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ardei gras.jpg" width="160" height="150" title="Ardei Gras - 10 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="cartofi dulci.jpg" width="160" height="150" title=" Cartofi Dulci- 4 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="castraveti.jpg" width="160" height="150" title=" Castraveti- 9 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ceapa galbena.png" width="160" height="150" title=" Ceapa Galbena - 4 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ceapa rosie.jpg" width="160" height="150" title=" Ceapa Rosie- 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="dovlecel.jpg" width="160" height="150" title=" Dovlecel- 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="morcov.png" width="160" height="150" title=" Morcov- 20 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="pastarnac.jpg" width="160" height="150" title=" Pastarnac- 6 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="rosii.jpg" width="160" height="150" title=" Rosii- 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="rosii cherry.jpg" width="160" height="150" title=" Rosii Cherry- 12 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="sfecla.png" width="160" height="150" title=" Sfecla- 30 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="telina.jpg" width="160" height="150" title=" Telina- 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="vinete.jpg" width="160" height="150" title=" Vinete- 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="zucchini.jpg" width="160" height="150" title=" Zucchini- 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="brocoli.jpg" width="160" height="150" title=" Brocoli- 9 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="conopida.jpg" width="160" height="150" title=" Conopida- 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="anghinare.jpg" width="160" height="150" title=" Anghinare- 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="varza alba.jpg" width="160" height="150" title=" Varza Alba - 10 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="varza rosie.jpg" width="160" height="150" title=" Varza Rosie - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ciuperci champinion.jpg" width="160" height="150" title=" Ciuperci Champinion - 15 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="usturoi.jpg" width="160" height="150" title=" Usturoi - 20 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="asparagus.jpg" width="160" height="150" title=" Asparagus - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="varza de bruxelles.jpg" width="160" height="150" title=" Varza de bruxelles - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mazare.jpg" width="160" height="150" title=" Mazare- 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="fasole pastai.jpg" width="160" height="150" title=" Fasole Pastai - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ardei kapia.jpg" width="160" height="150" title=" Ardei Kapia - 25 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+</table>
+<br /><br />
+<p> <b> <i> FRUCTE </i> </b> </p>
+<table>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="banana.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ananas.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="portocala.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="kiwi.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mar.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="para.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="piersica.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="struguri.png" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mango.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="afine.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="capsuni.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="zmeura.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mure.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="cirese.png" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="lime.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="lamai.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="prune.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="grapefruit.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="pepene galben.png" width="160" height="150" title=" Pepene Galben - 10 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="pepene rosu.jpeg" width="160" height="150" title=" Pepene Rosu - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="nuca de cocos.jpeg" width="160" height="150" title=" Nuca de Cocos - 15 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="fructul dragonului.jpg" width="160" height="150" title=" Fructul Dragonului - 20 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="rodie.jpg" width="160" height="150" title=" Rodie - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="avocado.jpg" width="160" height="150" title=" Avocado - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="gutui.jpg" width="160" height="150" title=" Gutui - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="smochine.jpg" width="160" height="150" title=" Smochine - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="papaya.jpg" width="160" height="150" title=" Papaya - 25 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+</table>
+<br /><br />
+<p> <b> <i> VERDETURI SI CONDIMENTE </i> </b> </p>
+
+<table>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="salata verde.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="spanac.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="rucola.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="andive.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="patrunjel.png" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="marar.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="leustean.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="rozmarin.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ceapa verde.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="piper negru.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="piper alb.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="busuioc.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="coriandru.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="oregano.jpg" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="foi de dafin.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="boia de ardei.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="curry.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="chili.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+</table>
+<br /><br />
+<p> <b> <i> PRODUSE DE ORIGINE ANIMALA </i> </b> </p>
+<table>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="lapte.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>	
+	<td><div class="container"><a href="Aliment.HTML" > <img src="smantana.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="cascaval.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="unt.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="telemea.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="branza feta.jpg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="branza dulce.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="iaurt.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="iaurt fructe.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="gorgonzola.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="brie.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mozzarella.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="gouda.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="branza topita.jpg" width="160" height="150" title=" Cirese - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="crema de branza.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="branza de burduf.jpg" width="160" height="150" title=" Lamai - 9 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="oua.jpg" width="160" height="150" title=" Prune - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="oua de prepelita.jpg" width="160" height="150" title=" Grapefruit - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="carne de vita.jpg" width="160" height="150" title=" Pepene Galben - 10 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="piept de pui.jpg" width="160" height="150" title=" Pepene Rosu - 8 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="pulpe de pui.jpg" width="160" height="150" title=" Nuca de Cocos - 15 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="carne de porc.jpg" width="160" height="150" title=" Fructul Dragonului - 20 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="bacon.png" width="160" height="150" title=" Rodie - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="mici.jpg" width="160" height="150" title=" Avocado - 5 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="carne de curcan.png" width="160" height="150" title=" Gutui - 15 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="peste.jpg" width="160" height="150" title=" Smochine - 40 Ron/Kg" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="fructe de mare.jpg" width="160" height="150" title=" Papaya - 25 Ron/Buc" ><button class="btn" title="Adauga in lista de cumparaturi">+</button></a></div></td>
+</tr>
+</table>
+<br /><br />
+<p> <b> <i> PRODUSE AMBALATE </i> </b> </p>
+<table>
+<tr>	
+	<td><div class="container"><a href="Aliment.HTML" > <img src="sare.jpg" width="160" height="150" title=" Struguri - 20 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="zahar.jpg" width="160" height="150" title=" Banane - 5 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="orez.jpg" width="160" height="150" title="Ananas - 10 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="faina de grau.jpg" width="160" height="150" title=" Portocale - 4 Ron/Kg" > <button class="btn"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="faina de porumb.jpg" width="160" height="150" title=" Kiwi - 9 Ron/Kg" > <button class="btn"> +</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="paste.jpg" width="160" height="150" title=" Mere - 4 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="spaghetti.jpeg" width="160" height="150" title=" Pere - 15 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="naut.jpg" width="160" height="150" title=" Piersici - 15 Ron/Kg" > <button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="gris.jpg" width="160" height="150" title=" Mango - 6 Ron/Buc" > <button class="btn">+</button></a></div></td>
+</tr>
+<tr>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ulei.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="ulei de masline.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></a></div></td>	
+	<td><div class="container"><a href="Aliment.HTML" > <img src="otet.png" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="musli.jpg" width="160" height="150" title=" Lime - 15 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="masline.jpg" width="160" height="150" title=" Afine - 35 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="porumb.jpg" width="160" height="150" title=" Capsuni - 12 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="castraveti in otet.jpg" width="160" height="150" title=" Zmeura - 30 Ron/Kg" ><button class="btn">+</button></a></div></td>
+	<td><div class="container"><a href="Aliment.HTML" > <img src="bulion.jpg" width="160" height="150" title=" Mure - 35 Ron/Kg" ><button class="btn">+</button></a></div></td>
+</tr>
+</table>
+</br>
+
+<div id="copyright">
+   &copy;A&J Team TW 2020 B3 #StaiAcasa
+</div>
+</div>
+</body>
+</html>
