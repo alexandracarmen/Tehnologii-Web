@@ -1,0 +1,212 @@
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL,
+	email VARCHAR(20) NOT NULL UNIQUE,
+	password VARCHAR(100) NOT NULL,
+	type VARCHAR(10) NOT NULL,
+	favourite_recipe_id INT
+)
+
+
+CREATE TABLE recipes (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	how_to TEXT NOT NULL,
+	category VARCHAR(200) NOT NULL,
+	restrictions TEXT,
+	owner_id INT NOT NULL,
+	private BOOLEAN NOT NULL,
+
+	FOREIGN KEY (owner_id)
+		REFERENCES users (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+ALTER TABLE users
+	ADD CONSTRAINT constraint_fk_fav_recipe_id
+		FOREIGN KEY (favourite_recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+
+
+CREATE TABLE restaurants (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	link TEXT NOT NULL
+)
+
+
+CREATE TABLE recipes_restaurants_pivot (
+	id SERIAL PRIMARY KEY,
+	recipe_id INT NOT NULL,
+	restaurant_id INT NOT NULL,
+
+	FOREIGN KEY (recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (restaurant_id)
+		REFERENCES restaurants (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+CREATE TABLE groups (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	favourite_recipe_id INT,
+	owner_id INT NOT NULL,
+
+	FOREIGN KEY (favourite_recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+
+	FOREIGN KEY (owner_id)
+		REFERENCES users (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+CREATE TABLE users_groups_pivot (
+	id SERIAL PRIMARY KEY,
+	user_id INT NOT NULL,
+	group_id INT NOT NULL,
+
+	FOREIGN KEY (user_id)
+		REFERENCES users (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (group_id)
+		REFERENCES groups (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+CREATE TABLE recipes_groups_pivot (
+	id SERIAL PRIMARY KEY,
+	recipe_id INT NOT NULL,
+	group_id INT NOT NULL,
+
+	FOREIGN KEY (recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (group_id)
+		REFERENCES groups (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+
+CREATE TABLE join_group_requests (
+	id SERIAL PRIMARY KEY,
+	group_id INT NOT NULL,
+	requester_id INT NOT NULL,
+	approved BOOLEAN NOT NULL,
+
+	FOREIGN KEY (group_id)
+		REFERENCES groups (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (requester_id)
+		REFERENCES users (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+
+
+CREATE TABLE aliments (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	price FLOAT NOT NULL,
+	unit_type VARCHAR(200) NOT NULL,
+	perishability VARCHAR(300),
+	season_availability VARCHAR(300),
+	category VARCHAR(200) NOT NULL,
+	image_path VARCHAR(400)
+)
+
+
+
+CREATE TABLE recipes_aliments_pivot (
+	id SERIAL PRIMARY KEY,
+	recipe_id INT NOT NULL,
+	aliment_id INT NOT NULL,
+	quantity INT NOT NULL,
+
+	FOREIGN KEY (recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (aliment_id)
+		REFERENCES aliments (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+
+CREATE TABLE shopping_lists (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	price FLOAT NOT NULL,
+	owner_id INT NOT NULL,
+
+	FOREIGN KEY (owner_id)
+		REFERENCES users (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+CREATE TABLE shopping_items (
+	id SERIAL PRIMARY KEY,
+	quantity INT NOT NULL,
+	price FLOAT NOT NULL,
+	aliment_id INT NOT NULL,
+	shopping_list_id INT NOT NULL,
+
+	FOREIGN KEY (aliment_id)
+		REFERENCES aliments (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+
+	FOREIGN KEY (shopping_list_id)
+		REFERENCES shopping_lists (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+
+CREATE TABLE images (
+	id SERIAL PRIMARY KEY,
+	path TEXT NOT NULL,
+	recipe_id INT NOT NULL,
+	FOREIGN KEY (recipe_id)
+		REFERENCES recipes (id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)
+
+
+
+
+
